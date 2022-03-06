@@ -17,6 +17,10 @@ export default class App extends React.Component {
             onChange={this.handleContentChange}
           />
         </div>
+        <pre
+          dangerouslySetInnerHTML={{ __html: this.state.content }}
+        />
+        {this.state.content}
       </div>
     );
   }
